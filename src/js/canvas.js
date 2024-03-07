@@ -18,6 +18,7 @@
   function drawImage() {
     var image = new Image();
     image.src = images[currentImage];
+    
     image.onload = function() {
       var scale = Math.min(canvas.width / image.width, canvas.height / image.height) * 0.7;
       var x = (canvas.width - image.width * scale) / 2;
